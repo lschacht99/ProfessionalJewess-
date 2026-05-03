@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Professional Jewess</title>
+  <meta name="description" content="Professional Jewess is a professional mentorship network for Jewish women." />
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas class="background-field" aria-hidden="true"></canvas>
+  <div class="site">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="Professional Jewess homepage">
+          <div class="brand-mark" aria-hidden="true"><span class="p">P</span><span class="j">J</span></div>
+          <div class="brand-name"><strong>Professional</strong><span>Jewess</span></div>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation"><a class="" href="index.html">Home</a><a class="" href="membership.html">Membership</a><a class="" href="directory.html">Network</a><a class="" href="signup.html">Create account</a><a class="active" href="login.html">Login</a><a class="btn primary" href="signup.html">Enter</a></nav>
+      </div>
+    </header>
+    <main>
+<section class="page-hero"><div class="container"><span class="kicker">Member login</span><h1>Enter the member area.</h1><p class="lead">This demo login sends you to the dashboard. In the live version, it would authenticate members and check approval status.</p></div></section>
+<section class="section tight"><div class="container split"><aside class="join-note"><h3>Login logic</h3><p>The live member area should only show profiles, scheduling, and messaging to approved members.</p></aside><form class="auth-card" data-login-form><div class="form-grid"><div class="field full"><label for="email">Email</label><input id="email" name="email" type="email" required /></div><div class="field full"><label for="password">Password</label><input id="password" name="password" type="password" required /></div></div><div class="form-actions"><button class="btn primary" type="submit">Login demo</button><a class="btn" href="signup.html">Create account</a><span class="status" data-status></span></div></form></div></section>
+</main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div><h3>Professional Jewess</h3><p>A professional mentorship network for Jewish women.</p></div>
+        <div><a href="index.html#join">Join</a><a href="membership.html">Membership</a><a href="directory.html">Network</a></div>
+        <div><a href="dashboard.html">Dashboard</a><a href="schedule.html">Schedule</a><a href="profile.html">Sample profile</a></div>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
