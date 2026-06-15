@@ -2,36 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Network Directory — Professional Jewess</title>
-  <meta name="description" content="Professional Jewess is a professional mentorship network for Jewish women." />
-  <link rel="icon" href="assets/favicon.svg" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Jewess — Open the unified app</title>
+  <meta name="description" content="Professional Jewess now runs from one unified React app." />
+  <meta http-equiv="refresh" content="0; url=professional-jewess/" />
+  <link rel="canonical" href="professional-jewess/" />
+  <style>
+    :root {
+      --paper: #FBF7F2;
+      --ink: #241A24;
+      --garnet: #6E2438;
+      --line: rgba(36, 26, 36, .12);
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.5;
+    }
+    main {
+      width: min(100%, 560px);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: white;
+      padding: 32px;
+      box-shadow: 0 18px 40px -28px rgba(36, 26, 36, .35);
+      text-align: center;
+    }
+    h1 { margin: 0 0 10px; font-family: var(--serif); font-weight: 400; line-height: 1.05; }
+    p { margin: 0 0 20px; color: #4A3C45; }
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: var(--garnet);
+      color: #FBEFE9;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <canvas class="background-field" aria-hidden="true"></canvas>
-  <div class="site">
-    <header class="nav">
-      <div class="container nav-inner">
-        <a class="brand" href="index.html" aria-label="Professional Jewess homepage">
-          <div class="brand-mark" aria-hidden="true"><span class="p">P</span><span class="j">J</span></div>
-          <div class="brand-name"><strong>Professional</strong><span>Jewess</span></div>
-        </a>
-        <nav class="nav-links" aria-label="Main navigation"><a class="" href="index.html">Home</a><a class="" href="membership.html">Membership</a><a class="active" href="directory.html">Network</a><a class="" href="signup.html">Create account</a><a class="" href="login.html">Login</a><a class="btn primary" href="signup.html">Enter</a></nav>
-      </div>
-    </header>
-    <main>
-<section class="page-hero"><div class="container"><span class="kicker">Network directory</span><h1>Find women by field, city, stage, and what they can help with.</h1><p class="lead">This preview shows how the approved member directory could work once profiles are connected to a real backend.</p><div class="member-toolbar"><input data-directory-search placeholder="Search law, STEM, Brooklyn, founder..."/><select data-directory-filter><option value="all">All members</option><option value="mentor">Mentors</option><option value="mentee">Mentees</option><option value="both">Both</option></select></div></div></section>
-<section class="section tight"><div class="container member-grid"><article class="member-card" data-member-card data-type="mentor both"><div class="member-top"><div class="member-avatar">M</div><div><h3>Miriam Cohen</h3><div class="meta">Attorney • Toronto</div></div></div><p>Law school, nonprofit leadership, and early legal career decisions.</p><div class="tag-row"><span class="tag">Law</span><span class="tag">Leadership</span><span class="tag">Toronto</span></div><div class="card-actions"><a class="btn primary small" href="profile.html">View profile</a><a class="btn small" href="schedule.html">Request call</a></div></article><article class="member-card" data-member-card data-type="both"><div class="member-top"><div class="member-avatar">S</div><div><h3>Sarah Adler</h3><div class="meta">Product Designer • New York</div></div></div><p>Portfolio review, creative careers, and product design transitions.</p><div class="tag-row"><span class="tag">Design</span><span class="tag">Portfolio</span><span class="tag">NYC</span></div><div class="card-actions"><a class="btn primary small" href="profile.html">View profile</a><a class="btn small" href="schedule.html">Request call</a></div></article><article class="member-card" data-member-card data-type="mentor"><div class="member-top"><div class="member-avatar">D</div><div><h3>Dina Rosen</h3><div class="meta">Mechanical Engineer • Boston</div></div></div><p>STEM mentorship, interviews, graduate school, and technical confidence.</p><div class="tag-row"><span class="tag">Engineering</span><span class="tag">STEM</span><span class="tag">Boston</span></div><div class="card-actions"><a class="btn primary small" href="profile.html">View profile</a><a class="btn small" href="schedule.html">Request call</a></div></article><article class="member-card" data-member-card data-type="both"><div class="member-top"><div class="member-avatar">R</div><div><h3>Rachel Stein</h3><div class="meta">Founder • Brooklyn</div></div></div><p>Consumer brand building, operations, marketing, and founder questions.</p><div class="tag-row"><span class="tag">Founder</span><span class="tag">Brand</span><span class="tag">Brooklyn</span></div><div class="card-actions"><a class="btn primary small" href="profile.html">View profile</a><a class="btn small" href="schedule.html">Request call</a></div></article><article class="member-card" data-member-card data-type="mentee"><div class="member-top"><div class="member-avatar">A</div><div><h3>Ariella Katz</h3><div class="meta">Finance Analyst • Montreal</div></div></div><p>Finance career planning and early-career professional confidence.</p><div class="tag-row"><span class="tag">Finance</span><span class="tag">Montreal</span><span class="tag">Early career</span></div><div class="card-actions"><a class="btn primary small" href="profile.html">View profile</a><a class="btn small" href="schedule.html">Request call</a></div></article><article class="member-card" data-member-card data-type="mentor"><div class="member-top"><div class="member-avatar">T</div><div><h3>Talia Green</h3><div class="meta">Marketing Director • Chicago</div></div></div><p>Brand strategy, resume positioning, and communications leadership.</p><div class="tag-row"><span class="tag">Marketing</span><span class="tag">Brand</span><span class="tag">Chicago</span></div><div class="card-actions"><a class="btn primary small" href="profile.html">View profile</a><a class="btn small" href="schedule.html">Request call</a></div></article></div></section>
-</main>
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div><h3>Professional Jewess</h3><p>A professional mentorship network for Jewish women.</p></div>
-        <div><a href="index.html#join">Join</a><a href="membership.html">Membership</a><a href="directory.html">Network</a></div>
-        <div><a href="dashboard.html">Dashboard</a><a href="schedule.html">Schedule</a><a href="profile.html">Sample profile</a></div>
-      </div>
-    </footer>
-  </div>
-  <script src="app.js"></script>
+  <main>
+    <h1>Professional Jewess has one home now.</h1>
+    <p>The older static prototype pages were consolidated into the unified app.</p>
+    <a href="professional-jewess/">Open the unified app</a>
+  </main>
 </body>
 </html>

@@ -1,27 +1,22 @@
-# Professional Jewess — Full Static Website Prototype
+# Professional Jewess
 
-This is a complete front-end prototype for the Professional Jewess mentorship network.
+Professional Jewess now has a single canonical codebase in [`professional-jewess/`](professional-jewess/): a React + Vite front end with a Cloudflare Worker API scaffold.
 
-## Pages
-- `index.html` — public landing page + first join form
-- `membership.html` — membership model and platform flow
-- `signup.html` — demo account creation
-- `login.html` — demo login
-- `dashboard.html` — demo member dashboard
-- `directory.html` — searchable member directory preview
-- `profile.html` — sample member profile
-- `schedule.html` — mentorship call request page
+The old root-level static prototype pages have been kept only as lightweight redirects so visitors and old links land in the unified app instead of seeing a different design or stale flow.
 
-## Identity direction
-- Main color: deep purple
-- Secondary accent: cream / champagne gold
-- Motion: quiet background light field, not visible “pulse” branding everywhere
-- Shapes: organic, soft, editorial, not template boxes
+## Work in one place
 
-## Demo behavior
-The forms use browser `localStorage` only. No information leaves your device.
+```bash
+cd professional-jewess
+npm install
+npm run dev
+```
 
-## Next backend options
-- Quick MVP: Google Sheets + Apps Script
-- Strong MVP: Supabase or Firebase Auth + database
-- No-code: Memberstack + Airtable
+Build the production app:
+
+```bash
+cd professional-jewess
+npm run build
+```
+
+For product notes, API details, deployment instructions, and project structure, see [`professional-jewess/README.md`](professional-jewess/README.md).
